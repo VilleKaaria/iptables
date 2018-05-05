@@ -124,7 +124,6 @@ $IPT -A INPUT -i $INTERF -p icmp --icmp-type 0 -m conntrack --ctstate NEW -j ACC
 $IPT -A INPUT -i $INTERF -p icmp --icmp-type 3 -m conntrack --ctstate NEW -j ACCEPT
 $IPT -A INPUT -i $INTERF -p icmp --icmp-type 11 -m conntrack --ctstate NEW -j ACCEPT
 
-
 # Allow inbound ipv6 RFC 4890 ICMP packets
 $IP6T -A INPUT -i $INTERF -p ipv6-icmp --icmpv6-type 1 -j ACCEPT
 $IP6T -A INPUT -i $INTERF -p ipv6-icmp --icmpv6-type 2 -j ACCEPT
