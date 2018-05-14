@@ -1,2 +1,2 @@
 # iptables
-This repository contains iptables scripts for various server configurations
+This repository contains iptables scripts for various configurations
